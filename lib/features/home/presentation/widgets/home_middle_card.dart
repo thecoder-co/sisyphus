@@ -1,11 +1,9 @@
 import 'package:candlesticks/candlesticks.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:sisypius/core/utils/extensions/widget_extensions.dart';
 import 'package:sisypius/features/charts/presentation/candle.dart';
 import 'package:sisypius/features/charts/providers/symbols_provider.dart';
-import 'package:sisypius/resources/resources.dart';
 import 'package:order_book/order_book.dart';
 
 class HomeMiddleCard extends StatefulWidget {
@@ -104,7 +102,7 @@ class OrberBookTab extends ConsumerWidget {
         count: 10,
         loaderColor: Theme.of(context).gold,
         onClick: (value) {
-          print(value.toString());
+          // print(value.toString());
         },
         priceWidget: const Text(
           'Price',

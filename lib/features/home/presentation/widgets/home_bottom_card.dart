@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:sisypius/core/utils/extensions/widget_extensions.dart';
-import 'package:sisypius/features/charts/presentation/candle.dart';
 import 'package:sisypius/features/home/presentation/widgets/buy_sell_bottomsheet.dart';
-import 'package:sisypius/resources/resources.dart';
 
 class HomeBottomCard extends StatelessWidget {
   const HomeBottomCard({super.key});

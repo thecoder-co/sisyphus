@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:sisypius/features/charts/presentation/custom_text_field.dart';
 
 class SymbolsSearchModal extends StatefulWidget {

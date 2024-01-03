@@ -1,16 +1,14 @@
+// ignore_for_file: implementation_imports
+
 import 'dart:math';
 import 'package:candlesticks/src/models/candle.dart';
 import 'package:candlesticks/src/theme/theme_data.dart';
-import 'package:candlesticks/src/widgets/toolbar_action.dart';
 import 'package:candlesticks/src/widgets/mobile_chart.dart';
 import 'package:candlesticks/src/widgets/desktop_chart.dart';
-import 'package:candlesticks/src/widgets/toolbar.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:io' show Platform;
 
-/// StatefulWidget that holds Chart's State (index of
-/// current position and candles width).
 class CustomCandlesticks extends StatefulWidget {
   /// The arrangement of the array should be such that
   ///  the newest item is in position 0
@@ -26,7 +24,7 @@ class CustomCandlesticks extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _CustomCandlesticksState createState() => _CustomCandlesticksState();
+  State<CustomCandlesticks> createState() => _CustomCandlesticksState();
 }
 
 class _CustomCandlesticksState extends State<CustomCandlesticks> {

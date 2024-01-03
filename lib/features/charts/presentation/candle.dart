@@ -1,15 +1,10 @@
-import 'dart:convert';
 import 'package:flutter_svg/svg.dart';
 import 'package:sisypius/core/utils/extensions/widget_extensions.dart';
 import 'package:sisypius/features/charts/presentation/custom_candlesticks.dart';
 import 'package:sisypius/features/charts/presentation/time_box.dart';
-import 'package:sisypius/features/charts/providers/repository.dart';
-import 'package:sisypius/features/charts/models/candle_ticker_model.dart';
 import 'package:flutter/material.dart';
-import 'package:candlesticks/candlesticks.dart';
 import 'package:sisypius/features/charts/providers/symbols_provider.dart';
 import 'package:sisypius/resources/resources.dart';
-import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ChartsTab extends ConsumerStatefulWidget {

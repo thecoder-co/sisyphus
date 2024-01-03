@@ -1,10 +1,9 @@
 import 'dart:convert';
 
 import 'package:candlesticks/candlesticks.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sisypius/core/services/services.dart';
+
 import 'package:sisypius/features/charts/models/candle_ticker_model.dart';
 import 'package:sisypius/features/charts/presentation/search_symbols.dart';
 import 'package:sisypius/features/charts/providers/repository.dart';
@@ -157,7 +156,6 @@ class SymbolsService {
   });
 
   BinanceRepository repository = BinanceRepository();
-  final BackendService _apiService = BackendService(Dio());
 
   //copyWith
   SymbolsService copyWith({
